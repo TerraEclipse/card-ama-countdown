@@ -353,7 +353,7 @@ body.variant_c .card.variant_c {
   font-size: 2.5em;
 }
 .variant_b .hometown {
-  font-weight: normal;
+  font-weight: 600;
 }
 .variant_b .main-text {
   background: transparent;
@@ -450,7 +450,7 @@ body.variant_c .card.variant_c {
   -webkit-transform: translatex(-50%);
   transform: translatex(-50%);
   position: absolute;
-  top: 12px;
+  top: 17px;
   display: table;
   width: 540px;
   z-index: 2;
@@ -476,7 +476,7 @@ body.variant_c .card.variant_c {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 105px;
+  bottom: 110px;
 }
 body.variant_c .card {
   font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
