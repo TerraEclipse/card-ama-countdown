@@ -290,6 +290,7 @@ body.variant_c .card.variant_c {
   text-align: center;
 }
 .name {
+  margin-bottom: 0.1em;
   font-size: 3em;
   line-height: 0.5em;
 }
