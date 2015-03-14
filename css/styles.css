@@ -342,6 +342,9 @@ body.variant_c .card.variant_c {
 .variant_b .hometown {
   font-weight: normal;
 }
+.variant_b .main-text {
+  background: transparent;
+}
 .dark-overlays {
   position: absolute;
   top: 0;
@@ -452,6 +455,7 @@ body.variant_c .card.variant_c {
 .outro p {
   font-family: 'myriad-pro-semi-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
   margin: 0;
+  font-weight: 600;
   font-size: 21px;
   line-height: 1.1em;
 }
@@ -518,6 +522,9 @@ body.variant_c .card {
 .variant_c .name {
   text-shadow: none;
   font-size: 2.5em;
+}
+.variant_c .main-text {
+  background: transparent;
 }
 .red-overlays {
   position: absolute;
