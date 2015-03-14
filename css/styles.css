@@ -205,7 +205,7 @@ body.variant_c .card.variant_c {
 }
 .salutation {
   width: 490px;
-  top: 5px;
+  top: 33px;
   right: 30px;
   font-size: 4em;
   -webkit-transform: rotate(-1.2deg);
@@ -213,7 +213,7 @@ body.variant_c .card.variant_c {
   z-index: 1;
 }
 .inline-countdown {
-  top: 33px;
+  top: 63px;
   right: 50px;
   font-size: 2em;
   -webkit-transform: rotate(1.2deg);
@@ -496,7 +496,7 @@ body.variant_c .card {
   line-height: 1em;
 }
 .variant_c .salutation {
-  top: -93px;
+  top: -62px;
   right: 0;
   font-size: 2.5em;
   text-shadow: none;
