@@ -9,8 +9,7 @@ $(function() {
   }
 
   function setLoopNumber(variantArray, selector) {
-    var text = document.getElementsByTagName('h1')[0].innerText
-      , loopNumber = variantArray.length + 1;
+    var loopNumber = variantArray.length + 1;
 
     $(selector).addClass('loop-' + loopNumber);
     setStateBackground(loopNumber, '.card');
