@@ -1,0 +1,588 @@
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.normal {
+  font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+.semi-condensed {
+  font-family: 'myriad-pro-semi-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+.condensed {
+  font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+.handwriting {
+  font-family: 'Origo', cursive;
+  font-weight: normal;
+}
+.heavy-shadow {
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+.heavy-text-shadow {
+  text-shadow: 0 2px 5px #000;
+}
+.horizontal-center {
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+body.variant_a .card.variant_a {
+  display: block;
+}
+body.variant_b .card.variant_b {
+  display: block;
+}
+body.variant_c .card.variant_c {
+  display: block;
+}
+.card.variant_a,
+.card.variant_b,
+.card.variant_c {
+  display: none;
+}
+.card {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  color: #fff;
+  background-size: cover;
+  overflow: hidden;
+}
+.card.variant_a .background-base {
+  background: rgba(0, 0, 0, 0.3);
+}
+.card.variant_b .background-base {
+  display: none;
+}
+.card.variant_c .background-base {
+  background: rgba(255, 255, 255, 0.7);
+}
+.card-content,
+.background-elements,
+.background-base {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card-content {
+  z-index: 2;
+}
+.background-elements {
+  z-index: 1;
+}
+.background-base {
+  z-index: 0;
+}
+.background-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  opacity: 0.7;
+  background: -moz-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, rgba(0, 0, 0, 0)));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+
+}
+.light-border,
+.light-border-inner,
+.light-border-circle {
+  position: absolute;
+}
+.light-border {
+  width: 100%;
+  opacity: 0.6;
+}
+.light-border.top {
+  top: 0;
+  height: 15px;
+}
+.light-border.bottom {
+  bottom: 0;
+  height: 75px;
+}
+.light-border.bottom .light-border-inner {
+  bottom: 0;
+}
+.light-border-inner,
+.light-border-circle {
+  position: absolute;
+  background: #8C8C8C;
+  z-index: 0;
+}
+.light-border-inner {
+  width: 100%;
+  height: 15px;
+}
+.light-border-circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  top: 0;
+  right: -10px;
+}
+.ama-logo {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 92px;
+  height: 40px;
+  background: url('../img/ama-logo-white.png') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+.main-text {
+  font-family: 'myriad-pro-semi-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 185px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  background: url('../img/broken-lines.png') no-repeat center center;
+  background-size: cover;
+}
+.text-line {
+  position: absolute;
+  width: 490px;
+  right: 20px;
+}
+.text-line.one {
+  top: 20px;
+}
+.text-line.two {
+  bottom: 20px;
+}
+.salutation,
+.inline-countdown,
+.name {
+  font-family: 'Origo', cursive;
+  font-weight: normal;
+  text-shadow: 0 2px 5px #000;
+  letter-spacing: 0.01em;
+  color: #E03218;
+}
+.salutation,
+.inline-countdown {
+  position: absolute;
+}
+.salutation {
+  width: 490px;
+  top: 5px;
+  right: 30px;
+  font-size: 4em;
+  -webkit-transform: rotate(-1.2deg);
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+.inline-countdown {
+  top: 33px;
+  right: 50px;
+  font-size: 2em;
+  -webkit-transform: rotate(1.2deg);
+  transform: rotate(1.2deg);
+}
+.mar-31-a {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 120px;
+  height: 115px;
+  background: url('../img/mar-31-a.png') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+.legislator-photo {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  width: 250px;
+  height: 250px;
+  border: 6px solid #fff;
+  z-index: 1;
+}
+.legislator-photo img {
+  font-size: 0;
+  width: 100%;
+  z-index: 1;
+}
+.signature {
+  position: absolute;
+  bottom: 35px;
+  height: 100px;
+  width: 100%;
+  z-index: 2;
+}
+.signature-inner {
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+  position: absolute;
+  left: 50%;
+  display: table;
+}
+.signer-photo,
+.signer-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+.signer-photo-wrapper {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+  border: 4px solid #fff;
+}
+.signer-photo-wrapper img {
+  width: 100%;
+}
+.signer-info {
+  padding-left: 1em;
+  text-align: center;
+}
+.name {
+  font-size: 3em;
+  line-height: 0.5em;
+}
+.hometown {
+  font-family: 'myriad-pro-semi-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.variant_b .ama-logo {
+  left: 22px;
+  opacity: 0.7;
+}
+.variant_b .legislator-photo {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 90px;
+  height: 90px;
+  border: 4px solid #fff;
+}
+.variant_b .salutation,
+.variant_b .name {
+  color: #F93A1E;
+}
+.variant_b .salutation {
+  position: relative;
+  top: auto;
+  right: auto;
+  width: auto;
+  line-height: 0.75em;
+  font-size: 2.5em;
+  -webkit-transform: none;
+  transform: none;
+}
+.variant_b .signature {
+  bottom: 15px;
+  height: 75px;
+}
+.variant_b .signer-photo-wrapper {
+  width: 75px;
+  height: 75px;
+}
+.variant_b .signer-info {
+  position: relative;
+  top: 6px;
+}
+.variant_b .name {
+  font-size: 2.5em;
+}
+.variant_b .hometown {
+  font-weight: normal;
+}
+.dark-overlays {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../img/dark-overlays.png') no-repeat center center;
+  background-size: cover;
+}
+.mar-31-b {
+  position: absolute;
+  top: -8px;
+  right: -18px;
+  width: 141px;
+  height: 139px;
+  background: url('../img/mar-31-b.png') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+.clock-countdown {
+  width: 100%;
+  position: absolute;
+  top: 123px;
+  text-align: center;
+  z-index: 1;
+}
+.clock-countdown::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.numbers::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.number {
+  float: left;
+}
+.colon,
+.count {
+  display: inline-block;
+}
+.number {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  padding: 19px 13px 5px 13px;
+  font-family: 'alternate-gothic-no-1-d', 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 118px;
+  font-weight: normal;
+  line-height: 0.75em;
+  background: #E03218;
+}
+.number:last-child {
+  margin-left: 5px;
+}
+.number-inner {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+}
+.number-inner::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.colon {
+  position: relative;
+  top: 21px;
+  vertical-align: top;
+  padding: 0 6px;
+  font-size: 55px;
+  font-weight: bold;
+}
+.label {
+  margin-top: 0.25em;
+  font-size: 0.85em;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.intro {
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+  position: absolute;
+  top: 12px;
+  display: table;
+  width: 530px;
+  z-index: 2;
+}
+.legislator-photo,
+.intro-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro-text {
+  padding-left: 0.5em;
+  text-align: center;
+}
+.intro p,
+.outro p {
+  font-family: 'myriad-pro-semi-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.1em;
+}
+.outro {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 105px;
+}
+body.variant_c .card {
+  font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: 600;
+  color: #000;
+}
+.variant_c .ama-logo {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 92px;
+  height: 42px;
+  background: url('../img/ama-logo-red.png') no-repeat center center;
+  background-size: cover;
+  z-index: 2;
+}
+.variant_c .legislator-photo {
+  top: 60px;
+  right: 30px;
+  width: 270px;
+  height: 270px;
+  left: auto;
+}
+.variant_c .main-text {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  width: 470px;
+}
+.variant_c .main-text p {
+  font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+  margin: 0;
+  font-size: 36px;
+  line-height: 1em;
+}
+.variant_c .salutation {
+  top: -93px;
+  right: 0;
+  font-size: 2.5em;
+  text-shadow: none;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+.variant_c .signature {
+  bottom: 25px;
+  width: 470px;
+}
+.variant_c .signer-photo-wrapper {
+  width: 80px;
+  height: 80px;
+}
+.variant_c .signer-info {
+  position: relative;
+  top: 6px;
+}
+.variant_c .name {
+  text-shadow: none;
+  font-size: 2.5em;
+}
+.red-overlays {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../img/red-overlays.png') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+.header-countdown-wrapper {
+  display: table;
+  margin: 0 auto;
+}
+.counter-label,
+.arrow,
+.header-count,
+.header-number,
+.header-label {
+  display: table-cell;
+  vertical-align: middle;
+}
+.counter-label,
+.header-count,
+.header-number,
+.header-label {
+  text-shadow: 0 2px 0 #9a1704;
+}
+.counter-label,
+.header-label {
+  font-size: 30px;
+  color: #f6c2ba;
+}
+.header-number {
+  font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 47px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.arrow {
+  position: relative;
+  top: 5px;
+  padding: 0 10px 0 15px;
+}
+.header-number {
+  position: relative;
+  top: -3px;
+  padding-right: 5px;
+}
+.header-label {
+  padding-right: 15px;
+}
+.header-count:last-child .header-label {
+  padding-right: 0;
+}
+.mar-31-c {
+  position: absolute;
+  top: 235px;
+  right: auto;
+  left: 419px;
+  width: 124px;
+  height: 118px;
+  background: url('../img/mar-31-c.png') no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+}

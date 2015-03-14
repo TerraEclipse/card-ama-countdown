@@ -1,0 +1,46 @@
+// HELPER CLASSES
+// ==========================================
+
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.normal {
+  font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+.semi-condensed {
+  font-family: 'myriad-pro-semi-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+.condensed {
+  font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+.handwriting {
+  font-family: 'Origo', cursive;
+  font-weight: normal;
+}
+
+.rounded(@val) {
+  -webkit-border-radius: @val;
+     -moz-border-radius: @val;
+          border-radius: @val;
+  overflow: hidden;
+}
+
+.heavy-shadow {
+  -webkit-box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+     -moz-box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+          box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+.heavy-text-shadow {
+  text-shadow: 0 2px 5px #000;
+}
+
+.horizontal-center {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}

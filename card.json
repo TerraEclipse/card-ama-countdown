@@ -1,0 +1,54 @@
+{
+  "title": "AMA March Countdown Card",
+  "description": "Card for AMA March Countdown campaign",
+  "typekit": true,
+  "wait": true,
+  "sizes": {
+    "twitter": {
+      "width": 800,
+      "height": 400,
+      "default": true
+    }
+  },
+  "styles": [
+    "./fonts/origo.css",
+    "./css/styles.css"
+  ],
+  "scripts": [
+    "./js/vendor/jquery-1.11.0.min.js",
+    "./js/main.js"
+  ],
+  "variables": {
+    "first": "Your",
+    "last": "Name",
+    "city": "Aptos",
+    "state": "CA",
+    "state_full": "Your Hometown",
+    "avatar": null,
+    "target": {
+      "title": "Rep",
+      "first": "First",
+      "last": "Sensenbrenner"
+    },
+    "variant": "variant_a",
+    "variants_shared": [],
+    "targets_shared": []
+  },
+  "variants": {
+    "variant_a": {
+      "variables": {
+        "card_class": "variant_a"
+      }
+    },
+    "variant_b": {
+      "variables": {
+        "card_class": "variant_b"
+      }
+    },
+    "variant_c": {
+      "variables": {
+        "card_class": "variant_c"
+      }
+    }
+  }
+}

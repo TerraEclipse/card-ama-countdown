@@ -1,0 +1,79 @@
+// BASE STYLES
+// ==========================================
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'myriad-pro', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+  &.variant_a {
+    .card.variant_a {
+      display: block;
+    }
+  }
+  &.variant_b {
+    .card.variant_b {
+      display: block;
+    }
+  }
+  &.variant_c {
+    .card.variant_c {
+      display: block;
+    }
+  }
+}
+
+.card.variant_a,
+.card.variant_b,
+.card.variant_c {
+  display: none;
+}
+
+.card {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  color: #fff;
+  background-size: cover;
+  overflow: hidden;
+
+  &.variant_a {
+    .background-base {
+      background: rgba(0,0,0,0.3);
+    }
+  }
+  &.variant_b {
+    .background-base {
+      display: none;
+    }
+  }
+  &.variant_c {
+    .background-base {
+      background: rgba(255,255,255,0.7);
+    }
+  }
+}
+.card-content,
+.background-elements,
+.background-base {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card-content {
+  z-index: 2;
+}
+.background-elements {
+  z-index: 1;
+}
+.background-base {
+  z-index: 0;
+}

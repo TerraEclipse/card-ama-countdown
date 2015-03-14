@@ -1,0 +1,165 @@
+// VARIANT B
+// ==========================================
+
+.variant_b {
+  .ama-logo {
+    left: 22px;
+    opacity: 0.7;
+  }
+  .legislator-photo {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90px;
+    height: 90px;
+    border: 4px solid #fff;
+  }
+  .salutation,
+  .name {
+    color: #F93A1E;
+  }
+  .salutation {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    line-height: 0.75em;
+    font-size: 2.5em;
+    -webkit-transform: none;
+    transform: none;
+  }
+  .signature {
+    bottom: 15px;
+    height: 75px;
+  }
+  .signer-photo-wrapper {
+    width: 75px;
+    height: 75px;
+  }
+  .signer-info {
+    position: relative;
+    top: 6px;
+  }
+  .name {
+    font-size: 2.5em;
+  }
+  .hometown {
+    font-weight: normal;
+  }
+}
+
+.dark-overlays {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('../img/dark-overlays.png') no-repeat center center;
+  background-size: cover;
+}
+
+.mar-31-b {
+  position: absolute;
+  top: -8px;
+  right: -18px;
+  width: 141px;
+  height: 139px;
+  background: url('../img/mar-31-b.png') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.clock-countdown {
+  .clearfix;
+  width: 100%;
+  position: absolute;
+  top: 123px;
+  text-align: center;
+  z-index: 1;
+}
+.numbers {
+  .clearfix;
+}
+.number {
+  float: left;
+}
+.colon,
+.count {
+  display: inline-block;
+}
+.number {
+  .rounded(5px);
+  position: relative;
+  padding: 19px 13px 5px 13px;
+  font-family: 'alternate-gothic-no-1-d', 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 118px;
+  font-weight: normal;
+  line-height: 0.75em;
+  background: #E03218;
+
+  &:last-child {
+    margin-left: 5px;
+  }
+}
+.number-inner {
+  text-shadow: 0 2px 0 rgba(0,0,0,0.45);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background: rgba(0,0,0,0.2);
+  }
+}
+.colon {
+  position: relative;
+  top: 21px;
+  vertical-align: top;
+  padding: 0 6px;
+  font-size: 55px;
+  font-weight: bold;
+}
+.label {
+  margin-top: 0.25em;
+  font-size: 0.85em;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.intro {
+  .horizontal-center;
+  position: absolute;
+  top: 12px;
+  display: table;
+  width: 530px;
+  z-index: 2;
+}
+.legislator-photo,
+.intro-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro-text {
+  padding-left: 0.5em;
+  text-align: center;
+}
+.intro,
+.outro {
+  p {
+    .semi-condensed;
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.1em;
+  }
+}
+.outro {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 105px;
+}
