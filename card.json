@@ -2,7 +2,6 @@
   "title": "AMA March Countdown Card",
   "description": "Card for AMA March Countdown campaign",
   "typekit": true,
-  "wait": true,
   "sizes": {
     "twitter": {
       "width": 800,
