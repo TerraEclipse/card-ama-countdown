@@ -14,7 +14,6 @@ $(function() {
 
     $(selector).addClass('loop-' + loopNumber);
     setStateBackground(loopNumber, '.card');
-    setFontSize(text, '.card-text', loopNumber);
   }
   
   setLoopNumber(variables.variants_shared, 'body');
