@@ -5,6 +5,10 @@ $(function() {
   function setStateBackground(loopNumber, cardSelector) {
     var $card = $(cardSelector);
 
+    if (loopNumber > 3) {
+      loopNumber -= 3;
+    }
+
     $card.css({ 'background-image': 'url("http://action.fixmedicarenow.org.s3.amazonaws.com/states/' + variables.state + '/' + variables.state + '-' + loopNumber + '.jpg")'});
   }
 
