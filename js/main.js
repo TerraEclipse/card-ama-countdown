@@ -1,5 +1,5 @@
 $(function() {
-  
+
   console.log('JS loaded');
 
   function setStateBackground(loopNumber, cardSelector) {
@@ -18,7 +18,20 @@ $(function() {
     $(selector).addClass('loop-' + loopNumber);
     setStateBackground(loopNumber, '.card');
   }
-  
-  setLoopNumber(variables.variants_shared, 'body');
 
+  if (variables.variants_shared) {
+    setLoopNumber(variables.variants_shared, 'body');
+  }
+
+  // Set clock numbers.
+  var days = Math.floor(variables.countdown /  (1000 * 60 * 60 * 24))
+    , hours = Math.floor(variables.countdown /  (1000 * 60 * 60))
+    , mins = Math.floor(variables.countdown /  (1000 * 60));
+
+  $('data-days-tens').text(Math.floor(days / 10));
+  $('data-days-ones').text(days % 10);
+  $('data-hours-tens').text(Math.floor(hours / 10));
+  $('data-hours-ones').text(hours % 10);
+  $('data-mins-tens').text(Math.floor(mins / 10));
+  $('data-mins-ones').text(mins % 10);
 });

@@ -69,24 +69,24 @@
         <div class="clock-countdown">
           <div class="count">
             <div class="numbers">
-              <div class="number"><span class="number-inner">1</span></div>
-              <div class="number"><span class="number-inner">2</span></div>
+              <div class="number"><span class="number-inner" data-days-tens></span></div>
+              <div class="number"><span class="number-inner" data-days-ones></span></div>
             </div>
             <div class="label">Days</div>
           </div>
           <div class="colon">:</div>
           <div class="count">
             <div class="numbers">
-              <div class="number"><span class="number-inner">1</span></div>
-              <div class="number"><span class="number-inner">5</span></div>
+              <div class="number"><span class="number-inner" data-hours-tens></span></div>
+              <div class="number"><span class="number-inner" data-hours-ones></span></div>
             </div>
             <div class="label">Hours</div>
           </div>
           <div class="colon">:</div>
           <div class="count">
             <div class="numbers">
-              <div class="number"><span class="number-inner">3</span></div>
-              <div class="number"><span class="number-inner">5</span></div>
+              <div class="number"><span class="number-inner" data-mins-tens></span></div>
+              <div class="number"><span class="number-inner" data-mins-ones></span></div>
             </div>
             <div class="label">Minutes</div>
           </div>
@@ -167,6 +167,11 @@
       </div>
     </div>
 
+    <script>
+      window.variables = {
+        countdown: 1306618725
+      };
+    </script>
     <script src="js/vendor/jquery-1.11.0.min.js"></script>
     <script src="js/main.js"></script>
   </body>
