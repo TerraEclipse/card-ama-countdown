@@ -28,10 +28,13 @@ $(function() {
     , hours = Math.floor(variables.countdown /  (1000 * 60 * 60))
     , mins = Math.floor(variables.countdown /  (1000 * 60));
 
-  $('data-days-tens').text(Math.floor(days / 10));
-  $('data-days-ones').text(days % 10);
-  $('data-hours-tens').text(Math.floor(hours / 10));
-  $('data-hours-ones').text(hours % 10);
-  $('data-mins-tens').text(Math.floor(mins / 10));
-  $('data-mins-ones').text(mins % 10);
+  $('[data-days-tens]').text(Math.floor(days / 10));
+  $('[data-days-ones]').text(days % 10);
+  $('[data-days]').text(days);
+  $('[data-hours-tens]').text(Math.floor(hours / 10));
+  $('[data-hours-ones]').text(hours % 10);
+  $('[data-hours]').text(hours);
+  $('[data-mins-tens]').text(Math.floor(mins / 10));
+  $('[data-mins-ones]').text(mins % 10);
+  $('[data-mins]').text(mins);
 });

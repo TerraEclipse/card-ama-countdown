@@ -31,7 +31,8 @@
     },
     "variant": "variant_a",
     "variants_shared": [],
-    "targets_shared": []
+    "targets_shared": [],
+    "countdown": 1306618725
   },
   "variants": {
     "variant_a": {
