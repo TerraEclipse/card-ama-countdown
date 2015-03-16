@@ -207,7 +207,7 @@ body.variant_c .card.variant_c {
   width: 490px;
   top: 33px;
   right: 30px;
-  font-size: 4em;
+  font-size: 3em;
   -webkit-transform: rotate(-1.2deg);
   transform: rotate(-3deg);
   z-index: 1;
@@ -303,7 +303,7 @@ body.variant_c .card.variant_c {
   display: none;
 }
 .variant_a.no-avatar {
-  bottom: 0;
+  bottom: -5px;
   font-size: 1.25em;
 }
 .variant_b .ama-logo {
