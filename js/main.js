@@ -25,8 +25,8 @@ $(function() {
 
   // Set clock numbers.
   var days = Math.floor(variables.countdown /  (1000 * 60 * 60 * 24))
-    , hours = Math.floor(variables.countdown /  (1000 * 60 * 60))
-    , mins = Math.floor(variables.countdown /  (1000 * 60));
+    , hours = Math.floor((variables.countdown - (days * 1000 * 60 * 60 * 24)) /  (1000 * 60 * 60))
+    , mins = Math.floor((variables.countdown - (days * 1000 * 60 * 60 * 24) - (hours * 1000 * 60 * 60)) /  (1000 * 60));
 
   $('[data-days-tens]').text(Math.floor(days / 10));
   $('[data-days-ones]').text(days % 10);
