@@ -13,7 +13,7 @@ $(function() {
   }
 
   function setLoopNumber(variantArray, selector) {
-    var loopNumber = variantArray.length + 1;
+    var loopNumber = variantArray.length;
 
     $(selector).addClass('loop-' + loopNumber);
     setStateBackground(loopNumber, '.card');
