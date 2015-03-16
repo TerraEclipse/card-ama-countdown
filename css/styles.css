@@ -302,9 +302,9 @@ body.variant_c .card.variant_c {
 .no-avatar .signer-photo {
   display: none;
 }
-.variant_a.no-avatar {
+.variant_a.no-avatar .signature {
   bottom: -5px;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 .variant_b .ama-logo {
   left: 22px;
