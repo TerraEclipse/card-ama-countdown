@@ -63,7 +63,7 @@ body.variant_c .card.variant_c {
   overflow: hidden;
 }
 .card.variant_a .background-base {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
 }
 .card.variant_b .background-base {
   display: none;
@@ -90,33 +90,7 @@ body.variant_c .card.variant_c {
   z-index: 0;
 }
 .background-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  opacity: 0.7;
-  background: -moz-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  /* FF3.6+ */
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, rgba(0, 0, 0, 0)));
-  /* Chrome,Safari4+ */
-
-  background: -webkit-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  /* Chrome10+,Safari5.1+ */
-
-  background: -o-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  /* Opera 11.10+ */
-
-  background: -ms-linear-gradient(top, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  /* IE10+ */
-
-  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
-  /* W3C */
-
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
-  /* IE6-9 */
-
+  display: none;
 }
 .light-border,
 .light-border-inner,
