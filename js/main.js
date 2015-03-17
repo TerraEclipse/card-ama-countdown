@@ -2,10 +2,25 @@ $(function() {
 
   console.log('JS loaded');
 
-  function setBackground(variantArray, selector) {
-    variables.test = 'testing';
+  function shuffle(o){ //v1.0
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+  };
 
-    console.log(variables.test);
+  function setBackground(variantArray, selector) {
+    var loop_number = variantArray.length + 1
+      , bg_images = [
+          '/public/img/doctors-1.jpg',
+          '/public/img/doctors-2.jpg',
+          '/public/img/doctors-3.jpg',
+          '/public/img/doctors-4.jpg',
+          '/public/img/doctors-5.jpg',
+          '/public/img/doctors-6.jpg'
+        ];
+
+    variables.bg_images = shuffle(bg_images);
+
+    console.log(variables.bg_images);
   }
 
   function setLoopNumber(variantArray, selector) {
