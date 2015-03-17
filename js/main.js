@@ -8,14 +8,15 @@ $(function() {
   };
 
   function setBackground(variantArray, selector) {
-    var loop_number = variantArray.length + 1
+    var base_url = '/cards/OaBGCfHcasTKrDHX/eyJmaXJzdCI6IllvdXIiLCJsYXN0IjoiTmFtZSIsImNpdHkiOiJBcHRvcyIsInN0YXRlIjoiQ0EiLCJzdGF0ZV9mdWxsIjoiWW91ciBIb21ldG93biIsImF2YXRhciI6bnVsbCwidGFyZ2V0Ijp7InRpdGxlIjoiUmVwIiwiZmlyc3QiOiJGaXJzdCIsImxhc3QiOiJTZW5zZW5icmVubmVyIn0sInZhcmlhbnQiOiJ2YXJpYW50X2EiLCJ2YXJpYW50c19zaGFyZWQiOltdLCJ0YXJnZXRzX3NoYXJlZCI6W10sImNvdW50ZG93biI6MTMwNjYxODcyNSwidmFyaWFudHMiOltdLCJzaXplIjoidHdpdHRlciIsImRlZmF1bHQiOnRydWUsInJhbmRvbWl6ZSI6ZmFsc2V9/files/img/'
+      , loop_number = variantArray.length + 1
       , bg_images = [
-          '/public/img/doctors-1.jpg',
-          '/public/img/doctors-2.jpg',
-          '/public/img/doctors-3.jpg',
-          '/public/img/doctors-4.jpg',
-          '/public/img/doctors-5.jpg',
-          '/public/img/doctors-6.jpg'
+          base_url + 'doctors-1.jpg',
+          base_url + 'doctors-2.jpg',
+          base_url + 'doctors-3.jpg',
+          base_url + 'doctors-4.jpg',
+          base_url + 'doctors-5.jpg',
+          base_url + 'doctors-6.jpg'
         ];
 
     if (!variables.bg_images) {
@@ -37,7 +38,7 @@ $(function() {
 
   if (variables.variants_shared) {
     setLoopNumber(variables.variants_shared, 'body');
-    setBackground(variables.variants_shared, 'body');
+    setBackground(variables.variants_shared, 'card');
   }
 
   // Set clock numbers.

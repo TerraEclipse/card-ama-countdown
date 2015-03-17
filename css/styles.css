@@ -58,7 +58,6 @@ body.variant_c .card.variant_c {
   width: 800px;
   height: 400px;
   color: #fff;
-  background: url('../img/doctors.jpg') no-repeat center center;
   background-size: cover;
   overflow: hidden;
 }
