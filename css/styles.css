@@ -230,7 +230,7 @@ body.variant_c .card.variant_c {
 }
 .signature {
   position: absolute;
-  bottom: 35px;
+  bottom: 15px;
   height: 100px;
   width: 100%;
   z-index: 2;
@@ -283,6 +283,11 @@ body.variant_c .card.variant_c {
 .variant_a.no-avatar .signature {
   bottom: -5px;
   font-size: 1.1em;
+}
+.name {
+  position: relative;
+  top: 5px;
+  font-size: 3.5em;
 }
 .variant_b .ama-logo {
   left: 22px;
@@ -467,6 +472,9 @@ body.variant_c .card.variant_c {
 .variant_c.no-avatar .signature {
   bottom: 10px;
   font-size: 1.25em;
+}
+.name {
+  font-size: 3em;
 }
 body.variant_c .card {
   font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
