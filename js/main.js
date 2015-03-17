@@ -15,7 +15,7 @@ $(function() {
       , loop_number = variantArray.length + 1
       , index = 0;
 
-    index = Math.floor(Math.random() * 5);
+    index = Math.floor(Math.random() * 7);
 
     console.log(index)
 
