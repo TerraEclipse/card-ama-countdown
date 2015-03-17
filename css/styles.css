@@ -89,6 +89,9 @@ body.variant_c .card.variant_c {
 .background-base {
   z-index: 0;
 }
+.hometown {
+  display: none;
+}
 .background-gradient {
   display: none;
 }
