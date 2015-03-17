@@ -2,14 +2,8 @@ $(function() {
 
   console.log('JS loaded');
 
-  function shuffle(o){ //v1.0
-    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
-  };
-
   function setBackground(variantArray, selector, secondarySelector) {
-    var base_url = '/cards/OaBGCfHcasTKrDHX/eyJmaXJzdCI6IllvdXIiLCJsYXN0IjoiTmFtZSIsImNpdHkiOiJBcHRvcyIsInN0YXRlIjoiQ0EiLCJzdGF0ZV9mdWxsIjoiWW91ciBIb21ldG93biIsImF2YXRhciI6bnVsbCwidGFyZ2V0Ijp7InRpdGxlIjoiUmVwIiwiZmlyc3QiOiJGaXJzdCIsImxhc3QiOiJTZW5zZW5icmVubmVyIn0sInZhcmlhbnQiOiJ2YXJpYW50X2EiLCJ2YXJpYW50c19zaGFyZWQiOltdLCJ0YXJnZXRzX3NoYXJlZCI6W10sImNvdW50ZG93biI6MTMwNjYxODcyNSwidmFyaWFudHMiOltdLCJzaXplIjoidHdpdHRlciIsImRlZmF1bHQiOnRydWUsInJhbmRvbWl6ZSI6ZmFsc2V9/files/img/'
-      , loop_number = variantArray.length + 1
+    var base_url = '/cards/OaBGCfHcasTKrDHX/eyJmaXJzdCI6IllvdXIiLCJsYXN0IjoiTmFtZSIsImNpdHkiOiJBcHRvcyIsInN0YXRlIjoiQ0EiLCJzdGF0ZV9mdWxsIjoiWW91ciBIb21ldG93biIsImF2YXRhciI6bnVsbCwidGFyZ2V0Ijp7InRpdGxlIjoiUmVwIiwiZmlyc3QiOiJGaXJzdCIsImxhc3QiOiJTZW5zZW5icmVubmVyIn0sInZhcmlhbnQiOiJ2YXJpYW50X2EiLCJ2YXJpYW50c19zaGFyZWQiOltdLCJ0YXJnZXRzX3NoYXJlZCI6W10sImNvdW50ZG93biI6MTMwNjYxODcyNSwidmFyaWFudHMiOltdLCJzaXplIjoidHdpdHRlciIsImRlZmF1bHQiOnRydWUsInJhbmRvbWl6ZSI6ZmFsc2V9/files/img/'    
       , bg_images = [
           base_url + 'doctors-1.jpg',
           base_url + 'doctors-2.jpg',
@@ -17,16 +11,14 @@ $(function() {
           base_url + 'doctors-4.jpg',
           base_url + 'doctors-5.jpg',
           base_url + 'doctors-6.jpg'
-        ];
+        ]
+      , loop_number = variantArray.length + 1
+      , index = 0;
 
-    if (!variables.bg_images) {
-      variables.bg_images = shuffle(bg_images);
-    }
+    index = Math.floor(Math.random() * 6) + 1;
 
-    $(selector).css({ 'background': 'url("' + variables.bg_images[0] + '") no-repeat center center' });
+    $(selector).css({ 'background': 'url("' + bg_images[index] + '") no-repeat center center' });
     $(secondarySelector).addClass('loop-' + loop_number);
-
-    variables.bg_images.splice(0, 1);
   }
 
   if (variables.variants_shared) {
