@@ -16,7 +16,7 @@ $(function() {
     var loopNumber = variantArray.length + 1;
 
     $(selector).addClass('loop-' + loopNumber);
-    setStateBackground(loopNumber, '.card');
+    // setStateBackground(loopNumber, '.card');
   }
 
   if (variables.variants_shared) {
