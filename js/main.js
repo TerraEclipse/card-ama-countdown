@@ -23,7 +23,7 @@ $(function() {
       variables.bg_images = shuffle(bg_images);
     }
 
-    $(selector).css({ 'background-image': 'url("' + variables.bg_images[0] + '") no-repeat center center' });
+    $(selector).css({ 'background': 'url("' + variables.bg_images[0] + '") no-repeat center center' });
     
     variables.bg_images.splice(0, 1);
 
