@@ -38,7 +38,7 @@ $(function() {
 
   if (variables.variants_shared) {
     setLoopNumber(variables.variants_shared, 'body');
-    setBackground(variables.variants_shared, 'card');
+    setBackground(variables.variants_shared, '.card');
   }
 
   // Set clock numbers.
