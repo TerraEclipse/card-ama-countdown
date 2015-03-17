@@ -7,7 +7,7 @@ $(function() {
     return o;
   };
 
-  function setBackground(variantArray, selector) {
+  function setBackground(variantArray, selector, secondarySelector) {
     var base_url = '/cards/OaBGCfHcasTKrDHX/eyJmaXJzdCI6IllvdXIiLCJsYXN0IjoiTmFtZSIsImNpdHkiOiJBcHRvcyIsInN0YXRlIjoiQ0EiLCJzdGF0ZV9mdWxsIjoiWW91ciBIb21ldG93biIsImF2YXRhciI6bnVsbCwidGFyZ2V0Ijp7InRpdGxlIjoiUmVwIiwiZmlyc3QiOiJGaXJzdCIsImxhc3QiOiJTZW5zZW5icmVubmVyIn0sInZhcmlhbnQiOiJ2YXJpYW50X2EiLCJ2YXJpYW50c19zaGFyZWQiOltdLCJ0YXJnZXRzX3NoYXJlZCI6W10sImNvdW50ZG93biI6MTMwNjYxODcyNSwidmFyaWFudHMiOltdLCJzaXplIjoidHdpdHRlciIsImRlZmF1bHQiOnRydWUsInJhbmRvbWl6ZSI6ZmFsc2V9/files/img/'
       , loop_number = variantArray.length + 1
       , bg_images = [
@@ -24,21 +24,13 @@ $(function() {
     }
 
     $(selector).css({ 'background': 'url("' + variables.bg_images[0] + '") no-repeat center center' });
-    
+    $(secondarySelector).addClass('loop-' + loop_number);
+
     variables.bg_images.splice(0, 1);
-
-    console.log(variables.bg_images);
-  }
-
-  function setLoopNumber(variantArray, selector) {
-    var loopNumber = variantArray.length + 1;
-
-    $(selector).addClass('loop-' + loopNumber);
   }
 
   if (variables.variants_shared) {
-    setLoopNumber(variables.variants_shared, 'body');
-    setBackground(variables.variants_shared, '.card');
+    setBackground(variables.variants_shared, '.card', 'body');
   }
 
   // Set clock numbers.
