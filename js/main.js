@@ -18,7 +18,13 @@ $(function() {
           '/public/img/doctors-6.jpg'
         ];
 
-    variables.bg_images = shuffle(bg_images);
+    if (!variables.bg_images) {
+      variables.bg_images = shuffle(bg_images);
+    }
+
+    $(selector).css({ 'background-image': 'url("' + variables.bg_images[0] + '") no-repeat center center' });
+    
+    variables.bg_images.splice(0, 1);
 
     console.log(variables.bg_images);
   }
