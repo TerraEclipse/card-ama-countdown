@@ -17,6 +17,8 @@ $(function() {
 
     index = Math.floor(Math.random() * 6) + 1;
 
+    console.log(index)
+
     $(selector).css({ 'background': 'url("' + bg_images[index] + '") no-repeat center center' });
     $(secondarySelector).addClass('loop-' + loop_number);
   }
