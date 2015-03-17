@@ -2,25 +2,21 @@ $(function() {
 
   console.log('JS loaded');
 
-  function setStateBackground(loopNumber, cardSelector) {
-    var $card = $(cardSelector);
+  function setBackground(variantArray, selector) {
+    variables.test = 'testing';
 
-    if (loopNumber > 3) {
-      loopNumber -= 3;
-    }
-
-    $card.css({ 'background-image': 'url("http://action.fixmedicarenow.org.s3.amazonaws.com/states/' + variables.state + '/' + variables.state + '-' + loopNumber + '.jpg")'});
+    console.log(variables.test);
   }
 
   function setLoopNumber(variantArray, selector) {
     var loopNumber = variantArray.length + 1;
 
     $(selector).addClass('loop-' + loopNumber);
-    // setStateBackground(loopNumber, '.card');
   }
 
   if (variables.variants_shared) {
     setLoopNumber(variables.variants_shared, 'body');
+    setBackground(variables.variants_shared, 'body');
   }
 
   // Set clock numbers.
