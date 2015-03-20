@@ -163,10 +163,10 @@ body.variant_c .card.variant_c {
   font-size: 1.1em;
 }
 .text-line.one {
-  top: 20px;
+  top: 15px;
 }
 .text-line.two {
-  bottom: 20px;
+  bottom: 18px;
 }
 .salutation,
 .inline-countdown,
@@ -295,6 +295,23 @@ body.variant_c .card.variant_c {
 }
 .yes {
   text-decoration: underline;
+}
+.variant_a .clock-countdown {
+  width: 490px;
+  right: 20px;
+  top: 56px;
+}
+.variant_a .number {
+  padding: 11px 9px 3px 9px;
+  font-weight: 600;
+  font-size: 58px;
+}
+.variant_a .colon {
+  padding: 0 2px;
+  font-size: 39px;
+}
+.variant_a .label {
+  font-size: 0.6em;
 }
 .variant_b .ama-logo {
   left: 22px;
