@@ -19,8 +19,33 @@
         <div class="salutation">Rep. {{target.last}},</div>
         <div class="main-text">
           <div class="text-line one">The deadline is looming (again). We only have</div>
-          <div class="inline-countdown">
+          {{!-- <div class="inline-countdown">
             <span data-days></span> days, <span data-hours></span> hours, and <span data-mins></span> mins
+          </div> --}}
+          <div class="clock-countdown">
+            <div class="count">
+              <div class="numbers">
+                <div class="number"><span class="number-inner" data-days-tens></span></div>
+                <div class="number"><span class="number-inner" data-days-ones></span></div>
+              </div>
+              <div class="label">Days</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="count">
+              <div class="numbers">
+                <div class="number"><span class="number-inner" data-hours-tens></span></div>
+                <div class="number"><span class="number-inner" data-hours-ones></span></div>
+              </div>
+              <div class="label">Hours</div>
+            </div>
+            <div class="colon">:</div>
+            <div class="count">
+              <div class="numbers">
+                <div class="number"><span class="number-inner" data-mins-tens></span></div>
+                <div class="number"><span class="number-inner" data-mins-ones></span></div>
+              </div>
+              <div class="label">Minutes</div>
+            </div>
           </div>
           <div class="text-line two">left to fix Medicare. <strong class="emphasis">Vote <span class="yes">YES</span> on H.R. 1470.</strong></div>
         </div>
