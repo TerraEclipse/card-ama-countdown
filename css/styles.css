@@ -514,7 +514,7 @@ body.variant_c .card {
 .variant_c .main-text p {
   font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
   margin: 0;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 1em;
 }
 .variant_c .salutation {
@@ -615,4 +615,7 @@ body.variant_c .card {
   background: url('../img/mar-31-c.png') no-repeat center center;
   background-size: cover;
   z-index: 0;
+}
+.variant_c .emphasis {
+  color: #197400;
 }
