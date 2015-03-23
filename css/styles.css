@@ -308,6 +308,7 @@ body.variant_c .card.variant_c {
 .variant_a .colon {
   padding: 0 2px;
   font-size: 39px;
+  top: 4px;
 }
 .variant_a .label {
   font-size: 0.6em;
