@@ -557,7 +557,7 @@ body.variant_c .card {
   z-index: 2;
 }
 .variant_c .legislator-photo {
-  top: 60px;
+  top: 50px;
   right: 30px;
   width: 270px;
   height: 270px;
@@ -565,20 +565,22 @@ body.variant_c .card {
 }
 .variant_c .main-text {
   position: absolute;
-  top: 150px;
+  top: 110px;
   left: 30px;
   width: 470px;
 }
 .variant_c .main-text p {
   font-family: 'myriad-pro-condensed', 'Helvetica Neue', 'Helvetica', sans-serif;
   margin: 0;
-  font-size: 35px;
-  line-height: 1em;
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.1em;
 }
 .variant_c .salutation {
   top: -62px;
   right: 0;
   font-size: 2.5em;
+  text-align: center;
   text-shadow: none;
   -webkit-transform: rotate(-2deg);
   transform: rotate(-2deg);
@@ -674,6 +676,9 @@ body.variant_c .card {
   background-size: cover;
   z-index: 0;
 }
-.variant_c .emphasis {
-  color: #197400;
+.variant_c .emphasis,
+.variant_c .state {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
