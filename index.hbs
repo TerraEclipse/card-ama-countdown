@@ -81,7 +81,7 @@
     <!-- Card Variant B -->
     <div class="card variant_b">
       <div class="card-content">
-        <div class="mar-31-b"></div>
+        {{!-- <div class="mar-31-b"></div> --}}
         <div class="intro">
           <div class="legislator-photo">
             <div class="legislator-photo-wrapper" style="background: url('{{#if target.photo}}{{target.photo}}{{else}}{{base_url}}/img/default-signer.png{{/if}}') no-repeat center center; background-size: cover;">
@@ -90,10 +90,11 @@
           </div>
           <div class="intro-text">
             <div class="salutation">{{target.title_short}} {{target.last}},</div>
-            <p>I'm counting down the time we have left to fix Medicare.</p>
+            {{!-- <p>I'm counting down the time we have left to fix Medicare.</p> --}}
           </div>
         </div>
-        <div class="clock-countdown">
+        <h1><span class="main-text-inner">The Medicare SGR patch has already expired. To patients and physicians in <strong class="state">{{#if target.state_full}}{{target.state_full}}{{else}}North Carolina{{/if}}</strong>, every minute matters!</span></h1>
+        {{!-- <div class="clock-countdown">
           <div class="count">
             <div class="numbers">
               <div class="number"><span class="number-inner" data-days-tens></span></div>
@@ -117,10 +118,10 @@
             </div>
             <div class="label">Minutes</div>
           </div>
-        </div>
-        <div class="outro">
+        </div> --}}
+        {{!-- <div class="outro">
           <p><strong class="emphasis"><span class="yes">PASS</span> H.R. 2</strong> and put patient care first.</p>
-        </div>
+        </div> --}}
         <div class="signature">
           <div class="signature-inner">
             <div class="signer-photo">
