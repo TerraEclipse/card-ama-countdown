@@ -608,7 +608,7 @@ body.variant_c .card {
   right: 0;
   bottom: 0;
   left: 0;
-  background: url('../img/red-overlays.png') no-repeat center center;
+  background: url('../img/red-overlays-alt.png') no-repeat center center;
   background-size: cover;
   z-index: 1;
 }

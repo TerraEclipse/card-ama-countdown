@@ -149,8 +149,8 @@
         <div class="legislator-photo" style="background: url('{{#if target.photo}}{{target.photo}}{{else}}{{base_url}}/img/default-signer.png{{/if}}') no-repeat center center; background-size: cover;">
             {{!-- <img src="{{#if target.photo}}{{target.photo}}{{else}}{{base_url}}/img/default-signer.png{{/if}}"> --}}
         </div>
-        <div class="mar-31-c"></div>
-        <div class="header-countdown">
+        {{!-- <div class="mar-31-c"></div> --}}
+        {{!-- <div class="header-countdown">
           <div class="header-countdown-wrapper">
             <div class="counter-label">Deadline Countdown</div>
             <div class="arrow"><img src="{{base_url}}/img/arrow.png"></div>
@@ -167,10 +167,10 @@
               <div class="header-label">Minutes</div>
             </div>
           </div>
-        </div>
+        </div> --}}
         <div class="main-text">
           <div class="salutation">{{target.title_short}} {{target.last}},</div>
-          <p>The deadline is looming (again)...it's time to repeal Medicare's SGR formula. <strong class="emphasis"><span class="yes">PASS</span> H.R. 2!</strong></p>
+          <p>The House did their job...now it's <strong class="emphasis">your</strong> turn! The Medicare SGR patch has expired. Patients and physicians in <strong class="state">{{#if target.state_full}}{{target.state_full}}{{else}}North Carolina{{/if}}</strong> are relying on you to act!</p>
         </div>
         <div class="signature">
           <div class="signature-inner">
