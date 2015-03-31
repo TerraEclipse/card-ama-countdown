@@ -374,11 +374,11 @@ h1 {
 }
 .variant_b .salutation {
   position: relative;
-  top: auto;
+  top: 8px;
   right: auto;
   width: auto;
   line-height: 0.75em;
-  font-size: 2.5em;
+  font-size: 3.5em;
   -webkit-transform: none;
   transform: none;
 }
@@ -402,6 +402,18 @@ h1 {
 }
 .variant_b .main-text {
   background: transparent;
+}
+.variant_b h1 {
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
+  width: 90%;
+  left: 0;
+  top: 97px;
+  height: 175px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
 }
 .dark-overlays {
   position: absolute;
@@ -497,7 +509,6 @@ h1 {
   position: absolute;
   top: 17px;
   display: table;
-  width: 540px;
   z-index: 2;
 }
 .legislator-photo,
