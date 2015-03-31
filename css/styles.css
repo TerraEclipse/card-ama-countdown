@@ -383,19 +383,19 @@ h1 {
   transform: none;
 }
 .variant_b .signature {
-  bottom: 15px;
+  bottom: 42px;
   height: 75px;
 }
 .variant_b .signer-photo-wrapper {
-  width: 75px;
-  height: 75px;
+  width: 85px;
+  height: 85px;
 }
 .variant_b .signer-info {
   position: relative;
   top: 6px;
 }
 .variant_b .name {
-  font-size: 2.5em;
+  font-size: 3em;
 }
 .variant_b .hometown {
   font-weight: 600;
