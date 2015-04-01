@@ -345,6 +345,13 @@ h1 {
 .emphasis {
   text-transform: uppercase;
 }
+.green {
+  color: #53D532;
+  font-weight: 700;
+}
+.underline {
+  text-decoration: underline;
+}
 .variant_b .ama-logo {
   left: 22px;
   opacity: 0.7;
