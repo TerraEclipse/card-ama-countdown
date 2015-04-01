@@ -688,3 +688,6 @@ body.variant_c .card {
 .variant_c .state {
   text-shadow: none;
 }
+.variant_c .green {
+  color: #197E00;
+}
